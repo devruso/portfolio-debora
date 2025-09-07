@@ -1,19 +1,17 @@
 {
 
   "name": "portfolio-debora",
-  "homepage": "https://github.com/devruso/portfolio-debora",
+  "homepage": "https://devruso.github.io/portfolio-debora",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && npm run postbuild",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "postbuild": "cp dist/index.html dist/404.html"
-
+    "deploy": "gh-pages -d dist"
 
   },
   "dependencies": {
