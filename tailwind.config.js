@@ -1,11 +1,16 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
+    extend: {
+      colors: {
+        olive: "#A2B06D",
+        darkOlive: "#8a9654",
+        beige: "#E1CAAD",
+      },
+    },
   },
   plugins: [],
 }
