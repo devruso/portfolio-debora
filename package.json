@@ -1,13 +1,20 @@
 {
+
   "name": "portfolio-debora",
+  "homepage": "https://github.com/devruso/portfolio-debora",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run postbuild",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "postbuild": "cp dist/index.html dist/404.html"
+
+
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
