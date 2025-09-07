@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         olive: "#A2B06D",
-        darkOlive: "#8a9654",
+        darkOlive: "#7A864B",
         beige: "#E1CAAD",
       },
     },
