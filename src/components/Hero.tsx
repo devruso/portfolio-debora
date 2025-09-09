@@ -12,7 +12,7 @@ export default function Hero() {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="flex items-center gap-3 bg-olive text-beige">
+              <div className="flex items-center gap-3 text-olive">
                 <Heart className="w-5 h-5" />
                 <span className="text-sm  font-medium tracking-wider uppercase">Psicóloga Clínica</span>
               </div>
@@ -39,8 +39,6 @@ export default function Hero() {
                 Iniciar minha jornada
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="bg-olive text-white px-6 py-3 rounded-2xl">Teste cor customizada</button>
-
               <button
                 onClick={() => {
                   const el = document.getElementById('sobre');
